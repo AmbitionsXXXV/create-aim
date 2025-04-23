@@ -1,0 +1,26 @@
+pre-commit:
+  parallel: true
+  commands:
+    rust_format:
+      glob: "*.{rs}"
+      run: rustfmt {staged_files} --edition 2024
+      stage_fixed: true
+    format:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      run: bun biome check --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
+      stage_fixed: true
+    lint:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      run: bun biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
+      stage_fixed: true
+
+commit-msg:
+  commands:
+    "lint commit message":
+      run: bun commitlint --edit {1}
+
+pre-push:
+  commands:
+    check:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      run: bun biome check --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {push_files}

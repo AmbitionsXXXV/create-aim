@@ -1,0 +1,36 @@
+{
+	"name": "create-aim",
+	"version": "0.1.0",
+	"type": "module",
+	"license": "MIT",
+	"author": "Etcetera",
+	"bin": {
+		"create-aim": "index.js",
+		"cva": "index.js"
+	},
+	"files": ["index.js", "template-*", "dist"],
+	"scripts": {
+		"dev": "unbuild --stub",
+		"build": "unbuild",
+		"typecheck": "tsc --noEmit",
+		"prepublishOnly": "npm run build"
+	},
+	"engines": {
+		"node": "^18.0.0 || ^20.0.0 || >=22.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AmbitionsXXXV/create-aim.git"
+	},
+	"homepage": "https://github.com/AmbitionsXXXV/create-aim#readme",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@clack/prompts": "^0.10.1",
+		"@types/cross-spawn": "^6.0.6",
+		"@types/node": "^22.14.1",
+		"cross-spawn": "^7.0.6",
+		"mri": "^1.2.0",
+		"picocolors": "^1.1.1",
+		"unbuild": "^3.5.0"
+	}
+}
