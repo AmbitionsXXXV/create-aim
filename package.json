@@ -1,6 +1,6 @@
 {
 	"name": "create-aim",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"type": "module",
 	"license": "MIT",
 	"author": "Etcetera",
@@ -8,7 +8,7 @@
 		"create-aim": "index.js",
 		"cva": "index.js"
 	},
-	"files": ["index.js", "template-*", "dist"],
+	"files": ["index.js", "template-react-ts-biome-tailwind", "dist"],
 	"scripts": {
 		"dev": "unbuild --stub",
 		"build": "unbuild",
