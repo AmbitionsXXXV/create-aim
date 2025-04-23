@@ -6,10 +6,10 @@ Quickly scaffold new, opinionated project structures suitable for medium-sized a
 
 ## Features
 
-*   **Rapid Setup:** Get your project running in seconds with interactive prompts.
-*   **Opinionated Templates:** Start with well-defined structures and configurations.
-*   **Strong Specifications:** Includes configurations for tools like TypeScript, Biome (linter/formatter), and Tailwind CSS (in specific templates) to ensure code quality and consistency.
-*   **Focus on Modern Frameworks:** Currently provides templates tailored for modern web development (React focused initially).
+* **Rapid Setup:** Get your project running in seconds with interactive prompts.
+* **Opinionated Templates:** Start with well-defined structures and configurations.
+* **Strong Specifications:** Includes configurations for tools like TypeScript, Biome (linter/formatter), and Tailwind CSS (in specific templates) to ensure code quality and consistency.
+* **Focus on Modern Frameworks:** Currently provides templates tailored for modern web development (React focused initially).
 
 ## Getting Started
 
@@ -22,33 +22,33 @@ npx create-aim@latest your-project-name
 Or using npm:
 
 ```bash
-npm create etc@latest your-project-name
+npm create aim@latest your-project-name
 ```
 
 Or using yarn:
 
 ```bash
-yarn create etc your-project-name
+yarn create aim your-project-name
 ```
 
 Or using pnpm:
 
 ```bash
-pnpm create etc your-project-name
+pnpm create aim your-project-name
 ```
 
 Or using bun:
 
 ```bash
-bun create etc your-project-name
+bun create aim your-project-name
 ```
 
 This will launch an interactive setup process where you can choose your desired template.
 
 ## Available Templates
 
-*   **`react-ts-biome-tailwind`**: A robust starting point for React projects using TypeScript, Biome for linting/formatting, and Tailwind CSS for styling. (Note: Ensure this template is available and uncommented in `src/index.ts`)
-*   Other community/official starters via custom commands (e.g., React Router, TanStack Router).
+* **`react-ts-biome-tailwind`**: A robust starting point for React projects using TypeScript, Biome for linting/formatting, and Tailwind CSS for styling. (Note: Ensure this template is available and uncommented in `src/index.ts`)
+* Other community/official starters via custom commands (e.g., React Router, TanStack Router).
 
 *(More templates might be available, check the interactive prompt for the full list)*
 
