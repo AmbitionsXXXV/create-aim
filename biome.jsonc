@@ -36,7 +36,6 @@
 				"noParameterAssign": "off",
 				"noNegationElse": "error",
 				"useShorthandArrayType": "error",
-
 				"noNonNullAssertion": "off",
 				"useSelfClosingElements": "off"
 			},

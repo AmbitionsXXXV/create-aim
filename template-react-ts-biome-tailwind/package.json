@@ -29,6 +29,7 @@
 		"@types/react": "^19.1.2",
 		"@types/react-dom": "^19.1.2",
 		"cz-git": "^1.11.1",
+		"etc-shared-biome-rules": "^0.1.2",
 		"fast-glob": "^3.3.3",
 		"react-router-devtools": "^1.1.10",
 		"tailwindcss": "^4.1.4",
