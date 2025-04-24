@@ -15,10 +15,16 @@ export type FrameworkVariant = {
 	customCommand?: string
 }
 
-const { blue, cyan } = colors
+const { blue, cyan, yellow } = colors
 
 // -- 框架与模板定义 -- Frameworks and templates definition
 export const FRAMEWORKS: Framework[] = [
+	{
+		name: 'astro',
+		display: 'Astro',
+		color: yellow,
+		variants: [],
+	},
 	{
 		name: 'react',
 		display: 'React',
