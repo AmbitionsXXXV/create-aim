@@ -8,7 +8,12 @@
 		"create-aim": "index.js",
 		"cva": "index.js"
 	},
-	"files": ["index.js", "template-react-ts-biome-tailwind", "dist"],
+	"files": [
+		"index.js",
+		"template-astro-tailwind",
+		"template-react-ts-biome-tailwind",
+		"dist"
+	],
 	"scripts": {
 		"dev": "unbuild --stub",
 		"build": "unbuild",
@@ -32,5 +37,6 @@
 		"mri": "^1.2.0",
 		"picocolors": "^1.1.1",
 		"unbuild": "^3.5.0"
-	}
+	},
+	"keywords": ["cli", "template"]
 }
