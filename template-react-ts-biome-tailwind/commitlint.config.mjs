@@ -24,8 +24,29 @@ export default defineConfig({
 	extends: ['@commitlint/config-conventional'], // extends can be nested
 	parserPreset: 'conventional-changelog-conventionalcommits',
 	rules: {
+		// -- 允许的 scope 列表
 		'scope-enum': [2, 'always', scopes],
+		// -- body 最长 1000 字符
 		'body-max-line-length': [2, 'always', 1000],
+		// -- 允许的 type 列表，增加 init
+		'type-enum': [
+			2,
+			'always',
+			[
+				'feat',
+				'fix',
+				'docs',
+				'style',
+				'refactor',
+				'perf',
+				'test',
+				'build',
+				'ci',
+				'chore',
+				'revert',
+				'init',
+			],
+		],
 	},
 	prompt: {
 		settings: {},
@@ -83,12 +104,12 @@ export default defineConfig({
 			{
 				value: 'revert',
 				name: 'revert:   ⏪️  Reverts a previous commit',
-				emoji: ':rewind:',
+				emoji: '⏪️ ',
 			},
 			{
 				value: 'init',
 				name: 'init:     🌱️  Initialize a new project',
-				emoji: ':seedling:',
+				emoji: '🌱️ ',
 			},
 		],
 		useEmoji: true,
