@@ -85,6 +85,11 @@ export default defineConfig({
 				name: 'revert:   ⏪️  Reverts a previous commit',
 				emoji: ':rewind:',
 			},
+			{
+				value: 'init',
+				name: 'init:     🌱️  Initialize a new project',
+				emoji: ':seedling:',
+			},
 		],
 		useEmoji: true,
 		confirmColorize: true,
