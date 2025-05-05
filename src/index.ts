@@ -22,7 +22,7 @@ const argv = mri<{
 const cwd = process.cwd()
 
 const helpMessage = `\
-Usage: create-aim [OPTION]... [DIRECTORY]
+Usage: create-etc-stack [OPTION]... [DIRECTORY]
 
 Create a new project in JavaScript or TypeScript.
 With no arguments, start the CLI in interactive mode.

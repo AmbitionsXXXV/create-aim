@@ -1,6 +1,6 @@
-# create-aim
+# create-etc-stack
 
-[![npm version](https://badge.fury.io/js/create-aim.svg)](https://badge.fury.io/js/create-aim)
+[![npm version](https://badge.fury.io/js/create-etc-stack.svg)](https://badge.fury.io/js/create-etc-stack)
 
 Quickly scaffold new, opinionated project structures suitable for medium-sized applications, enforcing strong specifications and best practices from the start.
 
@@ -16,7 +16,7 @@ Quickly scaffold new, opinionated project structures suitable for medium-sized a
 To create a new project, run the following command in your terminal:
 
 ```bash
-npx create-aim@latest your-project-name
+npx create-etc-stack@latest your-project-name
 ```
 
 Or using npm:
