@@ -21,7 +21,7 @@
 		"build": "unbuild",
 		"typecheck": "tsc --noEmit",
 		"prepublishOnly": "npm run build",
-		"publish-packages": "changeset publish"
+		"publish-packages": "bun run build && changeset publish"
 	},
 	"engines": {
 		"node": ">=20"

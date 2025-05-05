@@ -1,8 +1,14 @@
-name: Publish to npm
+name: Publish
+
 on:
   push:
-    tags:
-      - 'v*.*.*'
+    branches: 
+      - main
+    # tags:
+    #   - 'v*.*.*'
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -11,14 +17,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
+
       - name: Install Dependencies
         run: bun install --frozen-lockfile
-      - name: Build Project
-        run: bun run build
-      - run: bun run publish
+
+      - run: bun run publish-packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
