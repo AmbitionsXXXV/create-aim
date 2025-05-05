@@ -3,11 +3,9 @@
   "workspaces": {
     "": {
       "name": "create-etc-stack",
-      "dependencies": {
-        "@changesets/cli": "^2.29.3",
-      },
       "devDependencies": {
         "@biomejs/biome": "1.9.4",
+        "@changesets/cli": "^2.29.3",
         "@clack/prompts": "^0.10.1",
         "@types/cross-spawn": "^6.0.6",
         "@types/node": "^22.14.1",
